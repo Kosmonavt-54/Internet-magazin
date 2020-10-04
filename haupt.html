@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/javascript/jQuery.js"></script>
+    <script src="/javascript/scroll-header.js"></script>
+    <script src="/javascript/weiter.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="box-header">
+            <div class="inner-header">
+                <div class="logo-box">
+                    <img class="logo" src="/images/logo/horse.png"></img>
+                    <h1 class="text-logo">Iron Horse</h1>
+                </div>
+
+                <nav class="nav-haupt">
+                    <a class="but-nav" href="#">
+                        <span class="but-n-name">
+                            О компании
+                        </span>
+                    </a>
+                    <a class="but-nav" href="#">
+                        <span class="but-n-name">
+                            Отзывы
+                        </span>
+                    </a>
+                    <a class="but-nav" href="#">
+                        <span class="but-n-name">
+                            Сотрудничество
+                        </span>
+                    </a>
+                    <a class="but-nav" href="#">
+                        <span class="but-n-name">
+                            Контакты
+                        </span>
+                    </a>
+                    <a class="but-nav" href="#">
+                        <span class="but-n-name">
+                            Адрес
+                        </span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="front-site">
+        <div class="block-text-fs">
+            <div>
+                <h2 class="text-1-fs">Запчасти</h2>
+                <h1 class="text-2-fs">Для твоего железного коня</h1>
+            </div>
+        </div>
+
+        <div class="nav-global">
+            <div class="center-witer">
+                <a class="weiter-inner" onclick="weiter()">
+                    <span class="text-weiter">Продолжить</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-1">
+        <div class="nav-header" id="some_point1">
+            <div class="box-nh">
+                <div class="inner-nh">
+
+                    <div class="nav">
+                        <div class="menu-icon-wrapper">
+                            <div class="menu-icon"></div>
+                        </div>
+                    </div>
+
+
+
+                    <input id="find" type="text" maxlength="200" placeholder="Поиск по номеру">
+
+                    <a class="box-korzina">
+                        <span class="number">0</span>
+                        <p>Корзина</p>
+                    </a>
+
+                    <a href="#" class="user">
+                        <span>
+                            Авторизация
+                        </span>
+                    </a>
+                </div>
+
+                <div class="list-menu">
+
+                    <ul class="nav-menu-g">
+
+                        <li>
+                            <a href="#" class="href-l-m">
+                                <p class="name-href-m">Каталоги запчастей</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="href-l-m">
+                                <p class="name-href-m">Каталоги товаров</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="href-l-m">
+                                <p class="name-href-m">Автоэлектроника</p>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="content-box">
+            <div class="nav-katalog">
+                <div class="nav-katalog-c">
+                    <ul class="box-nav-k">
+                        <li class="nav-k">
+                            <button class="line-nav-k">
+                            Оригинальные каталоги
+                        </button>
+                        </li>
+                        <li class="nav-k">
+                            <button class="line-nav-k" id="#click-katalog-1">
+                            Общие каталоги
+                        </button>
+                        </li>
+                        <li class="nav-k">
+                            <button class="line-nav-k" id="#click-katalog-2">
+                            Мотокаталоги
+                        </button>
+                        </li>
+                        <li class="nav-k">
+                            <button class="line-nav-k" id="#click-katalog-3">
+                            CatCar Aftermarket
+                        </button>
+                        </li>
+                        <li class="nav-k">
+                            <button class="line-nav-k" id="#click-katalog-4">
+                            Производители
+                        </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block-dynamic">
+                    <div class="block-d-1">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+    <script>
+        document.querySelector('.menu-icon-wrapper').onclick = function() {
+            document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+        }
+    </script>
+
+    <script>
+        $(function() {
+            $('.menu-icon-wrapper').click(
+                function() {
+                    $('.list-menu').toggleClass("open");
+                }
+            )
+        });
+    </script>
+</body>
+
+</html>
