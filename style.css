@@ -441,7 +441,7 @@
             .filters {
                 width: 100%;
                 height: 400px;
-                padding-top: 20px;
+                padding: 20px 20px 0px 20px;
                 background-color: #333;
                 box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
             }
@@ -451,17 +451,9 @@
                 display: flex;
             }
             
-            .box-p-1 {
-                position: relative;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-            }
-            
             .but-p {
                 font-size: 14px;
                 height: 30px;
-                width: 90%;
                 text-align: left;
                 padding: 2px 0px 2px 10px;
                 border: none;
@@ -470,6 +462,10 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                margin: 0 10px;
+                width: 100%;
+                color: #8a8a8a;
+                cursor: pointer;
             }
             
             .but-p:focus {
@@ -479,14 +475,13 @@
             
             .strelka {
                 width: 15px;
-                transform: rotate(180deg);
+                transform: rotate(0deg);
                 transition: 0.3s;
-                color: rgb(255, 0, 0);
                 padding: 0 20px;
             }
             
             .strelka:hover {
-                transform: rotate(0deg);
+                transform: rotate(180deg);
             }
             
             .pole-f-2 {
@@ -494,10 +489,37 @@
                 margin-top: 20px;
             }
             
+            .box-sell {
+                display: flex;
+                width: 100%;
+                margin-left: 10px;
+            }
+            
             .but-p-sell {
+                width: 100%;
+                height: 30px;
+                padding: 2px 0px 2px 10px;
+                font-size: 14px;
+                text-align: left;
+                border: none;
+                background-color: #fff;
+                outline: none;
+                display: flex;
+                align-items: center;
+                box-shadow: inset 0px 0px 2px rgb(0, 0, 0, 1);
+                color: #8a8a8a;
+                cursor: pointer;
+            }
+            
+            .box-jahr {
+                display: flex;
+                width: 100%;
+                margin-left: 10px;
+            }
+            
+            .but-p-jahr {
                 font-size: 14px;
                 height: 30px;
-                width: 90%;
                 text-align: left;
                 padding: 2px 0px 2px 10px;
                 border: none;
@@ -506,4 +528,25 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                width: 100%;
+                color: #8a8a8a;
+                cursor: pointer;
+                border-right: 1px solid #000;
+            }
+            
+            .but-p-doppel {
+                font-size: 14px;
+                height: 30px;
+                text-align: left;
+                padding: 2px 0px 2px 10px;
+                border: none;
+                background-color: #fff;
+                outline: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 10px;
+                /* width: 45%; */
+                color: #8a8a8a;
+                cursor: pointer;
             }
