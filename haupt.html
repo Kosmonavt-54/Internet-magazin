@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <script src="/javascript/jQuery.js"></script>
-    <script src="/javascript/scroll-header.js"></script>
-    <script src="/javascript/weiter.js"></script>
+    <script src="/javascript/animation.js"></script>
     <title>Document</title>
 </head>
 
@@ -127,49 +126,70 @@
         <section class="content-box">
             <div class="box-filters">
                 <form name="filters" autocomplete="off" class="filters">
-                    <div class="pole-f-1">
+                    <div class="Spalte">
+                        <button type="button" class="but-p strelka">
+                                <span>Марка</span>
+                        </button>
 
-                        <button type="button" class="but-p">Марка
-                                <img src="/images/icon/strelka.svg" class="strelka">
+                        <div class="box-duo">
+                            <button type="button" class="but-p-sell strelka line-teilen">
+                                <span>Цена от</span>
                             </button>
 
+                            <button type="button" class="but-p-sell strelka">
+                                <span>до</span>
+                            </button>
+                        </div>
 
-                        <button type="button" class="but-p">Модель
-                                <img src="/images/icon/strelka.svg" class="strelka">
+                        <div class="box-duo">
+                            <button type="button" class="but-p-duo line-teilen strelka">
+                                    <span>Объем от, л</span>
                             </button>
 
-                        <button type="button" class="but-p">Поколение
-                                <img src="/images/icon/strelka.svg" class="strelka">
+                            <button type="button" class="but-p-duo strelka">
+                                    <span>до</span>
                             </button>
+                        </div>
                     </div>
 
-                    <div class="pole-f-2">
-                        <div class="box-sell">
-                            <button type="button" class="but-p-sell">Цена от
+                    <div class="Spalte">
+                        <button type="button" class="but-p strelka">
+                                <span>Модель</span>
+                        </button>
+
+                        <div class="box-duo">
+                            <button type="button" class="but-p-duo line-teilen strelka">
+                                    <span>Год от</span>
                             </button>
 
-                            <button type="button" class="but-p-sell">до
-                            </button>
-                        </div>
-
-                        <div class="box-jahr">
-                            <button type="button" class="but-p-jahr">Год от
-                                <img src="/images/icon/strelka.svg" class="strelka">
-                            </button>
-
-                            <button type="button" class="but-p-jahr">до
-                                <img src="/images/icon/strelka.svg" class="strelka">
+                            <button type="button" class="but-p-duo strelka">
+                                    <span>до</span>
                             </button>
                         </div>
 
-                        <button type="button" class="but-p-doppel">КПП
-                                <img src="/images/icon/strelka.svg" class="strelka">
+                        <button type="button" class="but-p strelka">
+                            <span>Привод</span>
+                    </button>
+                    </div>
+
+                    <div class="Spalte">
+                        <button type="button" class="but-p strelka">
+                                 <span>Поколение</span>
+                        </button>
+
+                        <div class="box-duo">
+                            <button type="button" class="but-p-duo line-teilen strelka">
+                                    <span>КПП</span>
                             </button>
 
-                        <button type="button" class="but-p-doppel">Топливо
-                                <img src="/images/icon/strelka.svg" class="strelka">
+                            <button type="button" class="but-p-duo strelka">
+                                    <span>Топливо</span>
                             </button>
+                        </div>
 
+                        <div class="box-unsold">
+                            <span class="text-unsold">Непроданные</span>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -192,6 +212,7 @@
             )
         });
     </script>
+
 </body>
 
 </html>
